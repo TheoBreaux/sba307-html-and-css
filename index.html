@@ -5,49 +5,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>MacroMaster</title>
+    <title>Welcome to Macro Master</title>
+
+    <style>
+      body {
+        padding: 20px;
+      }
+
+      header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid #2e72a9;
+        margin-bottom: 5%;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
-      <div class="logo-container">
-        <img id="logo" src="./images/macro-master-logo.png" alt="logo" />
+      <header>
+        <img class="logo" src="./images/macro-master-logo.png" alt="logo" />
+        <nav class="main-nav">
+          <ul class="nav-items">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="tryitout.html">Try It Out</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <h1 class="about-us" style="text-align: center; margin-bottom: 5%">
+        What do we do?
+      </h1>
+
+      <p class="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, ipsam
+        architecto, voluptatibus illum voluptas minima veniam quasi aperiam
+        earum modi recusandae, dolor nam impedit vero. Dolores perspiciatis
+        aspernatur fugit quos. Voluptas perferendis quisquam voluptate
+        laudantium, ex deleniti voluptatibus explicabo ab nesciunt, quo tenetur
+        numquam nihil quos soluta commodi assumenda quidem hic reprehenderit
+        ipsam suscipit cupiditate. Veritatis dolorum blanditiis praesentium rem.
+        Harum sunt accusamus esse libero numquam, non natus consequatur fugit
+        blanditiis commodi sequi vero quod veritatis quaerat excepturi tenetur
+        atque, in omnis soluta eum corrupti maxime modi? Impedit, iste
+        perspiciatis.
+      </p>
+
+      <p class="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+        necessitatibus repudiandae quae est recusandae! Non illo impedit ipsa
+        velit voluptas quis, eius esse quo, explicabo iure, dolorum neque
+        maiores voluptates? Cumque, voluptatum! Saepe quas maiores sint maxime
+        eius, eum exercitationem placeat? Voluptate a vel cupiditate laborum
+        necessitatibus! Itaque, maiores sit provident, ratione perferendis
+        adipisci dolorem fuga asperiores laborum beatae quia! Aliquam, pariatur.
+        Nam cumque ipsam nemo laborum explicabo ipsa mollitia exercitationem
+        recusandae tenetur harum culpa magni maxime laudantium sit labore modi
+        sint quia, minima a. Magnam sed excepturi quo officiis.
+      </p>
+
+      <p class="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+        necessitatibus repudiandae quae est recusandae! Non illo impedit ipsa
+        velit voluptas quis, eius esse quo, explicabo iure, dolorum neque
+        maiores voluptates? Cumque, voluptatum! Saepe quas maiores sint maxime
+        eius, eum exercitationem placeat? Voluptate a vel cupiditate laborum
+        necessitatibus! Itaque, maiores sit provident, ratione perferendis
+        adipisci dolorem fuga asperiores laborum beatae quia! Aliquam, pariatur.
+        Nam cumque ipsam nemo laborum explicabo ipsa mollitia exercitationem
+        recusandae tenetur harum culpa magni maxime laudantium sit labore modi
+        sint quia, minima a. Magnam sed excepturi quo officiis.
+      </p>
+    </div>
+
+    <footer>
+      <div>
+        <img class="logo" src="./images/macro-master-logo.png" alt="logo" />
       </div>
 
-      <form action="#">
+      <ul class="nav-items" style="display: flex; flex-direction: column">
+        <p class="quick-links">Quick Links</p>
+        <li><a href="register.html">F.A.Q.</a></li>
+        <li><a href="tryitout.html">Terms of Service</a></li>
+        <li><a href="tryitout.html">Affiliate Program</a></li>
+      </ul>
 
-        <!-- <div class="registration-input"> -->
-          <label for="firstName">First Name</label>
-          <input type="text" id="firstName" name="firstName" />
-        <!-- </div> -->
-
-        <!-- <div class="registration-input"> -->
-          <label for="lastName">Last Name</label>
-          <input type="text" id="lastName" name="lastName" />
-        <!-- </div> -->
-
-        <!-- <div class="registration-input"> -->
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" />
-        <!-- </div> -->
-
-        <!-- <div class="registration-input"> -->
-          <label for="createUsername">Create Username</label>
-          <input type="text" id="createUsername" name="createUsername" />
-        <!-- </div> -->
-
-        <!-- <div class="registration-input"> -->
-          <label for="password">Password</label>
-          <input type="password" id="password" name="password" />
-        <!-- </div> -->
-
-        <!-- <div class="registration-input"> -->
-          <label for="confirmPassword">Confirm Password</label>
-          <input type="password" id="confirmPassword" name="confirmPassword" />
-        <!-- </div> -->
-        <!-- <div class="registration-input"> -->
-          <button class="submit-btn" type="submit">Submit</button>
-        <!-- </div> -->
-      </form>
-    </div>
+      <ul class="nav-items" style="display: flex; flex-direction: column">
+        <p class="quick-links">Contact Us</p>
+        <li><a href="register.html">🖁 +1 555-555-555</a></li>
+        <li><a href="tryitout.html">📧 info@macromaster.com</a></li>
+      </ul>
+    </footer>
   </body>
 </html>

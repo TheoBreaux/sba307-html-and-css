@@ -6,26 +6,74 @@
   padding: 0;
 }
 
+/* MAIN PAGE */
+.nav-items {
+  display: flex;
+  list-style: none;
+  padding: 5px;
+}
+
+li {
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+li:nth-child(3) {
+  margin-right: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #2e72a9;
+  font-size: 1em;
+  transition: color 0.6s, font-size 0.6s, font-weight 0.6s;
+}
+
+a:hover {
+  font-weight: bold;
+  font-size: 1.25em;
+  color: #ec3020;
+}
+
+.para {
+  margin-bottom: 5%;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 2px solid #2e72a9;
+  border-bottom: 2px solid #2e72a9;
+}
+
+footer li {
+  font-family: "Josefin Slab", serif;
+}
+
+.quick-links {
+  font-family: "Josefin Slab", serif;
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+
+/* REGISTER */
 .container {
   display: flex;
   flex-direction: column;
   font-family: "Josefin Slab", serif;
 }
 
-.logo-container {
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
-}
-
 #logo {
-  width: 30%;
+  width: 20%;
 }
 
 form {
   width: 95%;
   max-width: 400px;
   margin: 0 auto;
+  margin-top: 20px;
 }
 
 label {
