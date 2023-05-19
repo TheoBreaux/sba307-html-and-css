@@ -6,12 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>MacroMaster</title>
+    <style>
+      body {
+        padding: 20px;
+      }
+
+      header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid #2e72a9;
+        margin-bottom: 20px;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
-
       <header>
-        <img id="logo" src="./images/macro-master-logo.png" alt="logo" />
+        <img class="logo" src="./images/macro-master-logo.png" alt="logo" />
         <nav class="main-nav">
           <ul class="nav-items">
             <a href="index.html"><li>Home</li></a>
@@ -21,7 +34,7 @@
         </nav>
       </header>
 
-      <form action="#">
+      <form id="register" action="#">
         <!-- <div class="registration-input"> -->
         <label for="firstName">First Name</label>
         <input type="text" id="firstName" name="firstName" />
@@ -56,5 +69,23 @@
         <!-- </div> -->
       </form>
     </div>
+    <footer style="margin-top: 10px">
+      <div>
+        <img class="logo" src="./images/macro-master-logo.png" alt="logo" />
+      </div>
+
+      <ul class="nav-items" style="display: flex; flex-direction: column">
+        <p class="quick-links">Quick Links</p>
+        <li><a href="#">F.A.Q.</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Affiliate Program</a></li>
+      </ul>
+
+      <ul class="nav-items" style="display: flex; flex-direction: column">
+        <p class="quick-links">Contact Us</p>
+        <li><a href="#">🖁 +1 555-555-555</a></li>
+        <li><a href="#">📧 info@macromaster.com</a></li>
+      </ul>
+    </footer>
   </body>
 </html>

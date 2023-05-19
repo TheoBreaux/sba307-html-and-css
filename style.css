@@ -69,11 +69,10 @@ footer li {
   width: 20%;
 }
 
-form {
+#register {
   width: 95%;
   max-width: 400px;
   margin: 0 auto;
-  margin-top: 20px;
 }
 
 label {
@@ -107,4 +106,20 @@ input {
   font-weight: bold;
   cursor: pointer;
   width: 100%;
+}
+
+/* TRY IT OUT PAGE */
+section {
+  display: flex;
+}
+
+.macro-calc-form {
+  width: 65%;
+  margin-left: 5%;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  width: 50%;
 }

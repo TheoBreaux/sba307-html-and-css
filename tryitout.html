@@ -6,11 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
+
+    <style>
+      body {
+        padding: 20px;
+      }
+
+      header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid #2e72a9;
+        margin-bottom: 5%;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
       <header>
-        <img id="logo" src="./images/macro-master-logo.png" alt="logo" />
+        <img class="logo" src="./images/macro-master-logo.png" alt="logo" />
         <nav class="main-nav">
           <ul class="nav-items">
             <a href="index.html"><li>Home</li></a>
@@ -20,5 +35,100 @@
         </nav>
       </header>
     </div>
+
+   <section>
+      <div style="display: flex; justify-content: center">
+        <img
+          class="macro-calc"
+          src="./images/image.jpg"
+          alt="scale healthy muscle"
+          style="width: 100%; height: auto" />
+      </div>
+  
+      <form class="macro-calc-form "action="#">
+        <label for="sex">Are you a man or a woman?</label>
+        <select name="sex" id="sex">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="undisclosed">Prefer not to say</option>
+        </select>
+  
+        <label for="age">How old are you?</label>
+        <input type="number" name="age" id="age" min="0" max="100" value="0" />
+  
+        <label for="weight">How much do you weigh in lbs? </label>
+        <input
+          type="number"
+          name="weight"
+          id="weight"
+          min="0"
+          max="400"
+          value="0" />
+  
+        <label for="height">How tall are you in inches? </label>
+        <input
+          type="number"
+          name="height"
+          id="height"
+          min="0"
+          max="120"
+          value="0" />
+  
+        <div class="checkbox-container">
+          <label for="option1">Gain strength & muscle</label><br />
+          <input type="checkbox" name="option1" id="option1" value="Option 1" />
+        </div>
+  
+        <div class="checkbox-container">
+          <label for="option1">Lose Fat</label><br />
+          <input type="checkbox" name="option1" id="option1" value="Option 1" />
+        </div>
+  
+        <div class="checkbox-container">
+          <label for="option1">Increase mobility & flexibility</label><br />
+          <input type="checkbox" name="option1" id="option1" value="Option 1" />
+        </div>
+  
+        <div class="checkbox-container">
+          <label for="option1">Enhance athletic/physical performance</label><br />
+          <input type="checkbox" name="option1" id="option1" value="Option 1" />
+        </div>
+  
+        <div class="checkbox-container">
+          <label for="option1">Other</label><br />
+          <input type="checkbox" name="option1" id="option1" value="Option 1" />
+        </div>
+      </form>
+    </section>
+  
+
+
+
+
+    
+
+
+
+
+
+
+    <footer style="margin-top: 5%">
+      <div>
+        <img class="logo" src="./images/macro-master-logo.png" alt="logo" />
+      </div>
+
+      <ul class="nav-items" style="display: flex; flex-direction: column">
+        <p class="quick-links">Quick Links</p>
+        <li><a href="#">F.A.Q.</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Affiliate Program</a></li>
+      </ul>
+
+      <ul class="nav-items" style="display: flex; flex-direction: column">
+        <p class="quick-links">Contact Us</p>
+        <li><a href="#">🖁 +1 555-555-555</a></li>
+        <li><a href="#">📧 info@macromaster.com</a></li>
+      </ul>
+    </footer>
   </body>
 </html>
