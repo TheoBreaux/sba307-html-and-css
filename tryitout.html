@@ -28,89 +28,120 @@
         <img class="logo" src="./images/macro-master-logo.png" alt="logo" />
         <nav class="main-nav">
           <ul class="nav-items">
-            <a href="index.html"><li>Home</li></a>
-            <a href="register.html"><li>Register</li></a>
-            <a href="tryitout.html"><li>Try It Out</li></a>
+            <li><a href="index.html" class="menu-links">Home</a></li>
+            <li><a href="register.html" class="menu-links">Register</a></li>
+            <li><a href="tryitout.html" class="menu-links">Try It Out</a></li>
           </ul>
         </nav>
       </header>
     </div>
 
-   <section>
-      <div style="display: flex; justify-content: center">
-        <img
-          class="macro-calc"
-          src="./images/image.jpg"
-          alt="scale healthy muscle"
-          style="width: 100%; height: auto" />
-      </div>
-  
-      <form class="macro-calc-form "action="#">
-        <label for="sex">Are you a man or a woman?</label>
-        <select name="sex" id="sex">
-          <option value="male">Male</option>
-          <option value="female">Female</option>
-          <option value="undisclosed">Prefer not to say</option>
-        </select>
-  
-        <label for="age">How old are you?</label>
-        <input type="number" name="age" id="age" min="0" max="100" value="0" />
-  
-        <label for="weight">How much do you weigh in lbs? </label>
-        <input
-          type="number"
-          name="weight"
-          id="weight"
-          min="0"
-          max="400"
-          value="0" />
-  
-        <label for="height">How tall are you in inches? </label>
-        <input
-          type="number"
-          name="height"
-          id="height"
-          min="0"
-          max="120"
-          value="0" />
-  
-        <div class="checkbox-container">
-          <label for="option1">Gain strength & muscle</label><br />
-          <input type="checkbox" name="option1" id="option1" value="Option 1" />
+    <div style="display: flex; justify-content: center">
+      <img
+        class="meals-image"
+        src="./images/image.jpg"
+        alt="muscular man with healthy meal images"
+        style="width: 100%; height: auto" />
+    </div>
+
+    <section>
+      <form class="macro-calc-form" action="#">
+        <div class="calc-input">
+          <label class="register-label" for="gender">Gender</label>
+          <select class="gender-select" name="gender" id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
         </div>
-  
-        <div class="checkbox-container">
-          <label for="option1">Lose Fat</label><br />
-          <input type="checkbox" name="option1" id="option1" value="Option 1" />
+
+        <div class="calc-input">
+          <label class="register-label" for="weight">Weight (lbs)</label>
+          <input
+            type="number"
+            min="0"
+            max="500"
+            name="weight"
+            id="weight"
+            value="150" />
         </div>
-  
-        <div class="checkbox-container">
-          <label for="option1">Increase mobility & flexibility</label><br />
-          <input type="checkbox" name="option1" id="option1" value="Option 1" />
+
+        <div class="calc-input">
+          <label class="register-label" for="height">Height (Inches)</label>
+          <input
+            type="number"
+            name="height"
+            id="height"
+            min="0"
+            max="120"
+            value="60" />
         </div>
-  
-        <div class="checkbox-container">
-          <label for="option1">Enhance athletic/physical performance</label><br />
-          <input type="checkbox" name="option1" id="option1" value="Option 1" />
+
+        <div class="calc-input">
+          <label class="register-label" for="age">Age</label>
+          <input
+            type="number"
+            name="age"
+            value="30"
+            id="age"
+            min="15"
+            max="110" />
         </div>
-  
-        <div class="checkbox-container">
-          <label for="option1">Other</label><br />
-          <input type="checkbox" name="option1" id="option1" value="Option 1" />
+
+        <div class="calc-input">
+          <label class="register-label" for="activity">Activity Level</label>
+          <select class="activity-select" name="activity" id="activity">
+            <option value="none">None (little to no physical activity)</option>
+            <option value="little">
+              A little (1 to 3 hours of exercise or sports per week)
+            </option>
+            <option value="some">
+              Some (4 to 6 hours of exercise or sports per week)
+            </option>
+            <option value="lot">
+              A lot (7 to 9 hours of exercise or sports per week)
+            </option>
+            <option value="ton">
+              A TON (10+ hours of exercise or sports per week)
+            </option>
+          </select>
         </div>
+        
+        <button class="submit-btn" type="submit">Submit</button>
       </form>
+
+      <table>
+        <caption>Our Offerings</caption>
+        <tr class="titles">
+          <th>Offering</th>
+          <th>Price</th>
+          <th>Time Commitment</th>
+          <th>Contact</th>
+        </tr>
+        <tr>
+          <td>Custom Macros</td>
+          <td>$250</td>
+          <td>2 Hours</td>
+          <td><a href="mailto:macros@macromaster.com">macros@macromaster.com</a></td>
+        </tr>
+          <td>Online Coaching</td>
+          <td>$100</td>
+          <td>30 Minutes</td>
+          <td><a href="mailto:coaching@macromaster.com">coaching@macromaster.com</a></td>
+        </tr>
+        <tr>
+          <td>Personal Training</td>
+          <td>$150</td>
+          <td>1 Hour</td>
+          <td><a href="mailto:training@macromaster.com">training@macromaster.com</a></td>
+        </tr>
+        <tr>
+          <td>Diet Planning</td>
+          <td>$200</td>
+          <td>1 Hour</td>
+          <td><a href="mailto:diet@macromaster.com">diet@macromaster.com</a></td>
+        </tr>
+      </table>
     </section>
-  
-
-
-
-
-    
-
-
-
-
-
 
     <footer style="margin-top: 5%">
       <div>
@@ -119,15 +150,15 @@
 
       <ul class="nav-items" style="display: flex; flex-direction: column">
         <p class="quick-links">Quick Links</p>
-        <li><a href="#">F.A.Q.</a></li>
-        <li><a href="#">Terms of Service</a></li>
-        <li><a href="#">Affiliate Program</a></li>
+        <li><a href="#" class="footer-links">F.A.Q.</a></li>
+        <li><a href="#" class="footer-links">Terms of Service</a></li>
+        <li><a href="#" class="footer-links">Affiliate Program</a></li>
       </ul>
 
       <ul class="nav-items" style="display: flex; flex-direction: column">
         <p class="quick-links">Contact Us</p>
-        <li><a href="#">🖁 +1 555-555-555</a></li>
-        <li><a href="#">📧 info@macromaster.com</a></li>
+        <li><a href="#" class="footer-links">🖁 +1 555-555-555</a></li>
+        <li><a href="#" class="footer-links">📧 hi@macromaster.com</a></li>
       </ul>
     </footer>
   </body>

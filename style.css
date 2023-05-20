@@ -22,17 +22,26 @@ li:nth-child(3) {
   margin-right: 0;
 }
 
-a {
+.menu-links {
   text-decoration: none;
   color: #2e72a9;
   font-size: 1em;
   transition: color 0.6s, font-size 0.6s, font-weight 0.6s;
 }
 
-a:hover {
+.menu-links:hover {
   font-weight: bold;
   font-size: 1.25em;
   color: #ec3020;
+}
+
+.footer-links {
+  text-decoration: none;
+  color: #2e72a9;
+  font-size: 1em;
+}
+.footer-links:hover {
+  text-decoration: underline;
 }
 
 .para {
@@ -75,8 +84,10 @@ footer li {
   margin: 0 auto;
 }
 
-label {
+.register-label {
   font-weight: bold;
+  font-family: "Josefin Slab", serif;
+  margin-bottom: 5px;
 }
 
 input {
@@ -109,17 +120,68 @@ input {
 }
 
 /* TRY IT OUT PAGE */
+.meals-image {
+  animation: scaleDown 5s infinite;
+}
+
 section {
+  margin-top: 5%;
   display: flex;
 }
 
 .macro-calc-form {
-  width: 65%;
-  margin-left: 5%;
+  width: 50%;
+  margin-right: 5%;
 }
 
-.checkbox-container {
+.calc-input {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+}
+
+.gender-select,
+.activity-select {
+  margin-bottom: 5px;
+  font-family: "Josefin Slab", serif;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+caption {
+  font-size: 1.5em;
+  font-weight: bold;;
+}
+
+table {
   width: 50%;
+  margin-left: 5%;
+  padding: 5px;
+  font-size: 1em;
+  font-family: "Josefin Slab", serif;
+  font-weight: bold;
+}
+
+th {
+  border: 2px solid #2e72a9;
+  font-weight: bold;
+  background-color: #d7d3db;
+}
+
+td {
+  border: 2px solid #2e72a9;
+  text-align: center;
+}
+
+@keyframes scaleDown {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
